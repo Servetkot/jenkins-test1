@@ -13,5 +13,10 @@ pipeline {
         input(message: 'is it end?', ok: 'yea')
       }
     }
+    stage('smth') {
+      steps {
+        sh 'echo "helloworld"'
+      }
+    }
   }
 }
